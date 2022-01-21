@@ -1,5 +1,5 @@
 async function fetchMovies(searchText) {
-  const url = 'http://www.omdbapi.com/';
+  const url = '/api/';
   const { data } = await axios.get(url, {
     params: {
       apikey: 'ded646ef',
@@ -12,7 +12,7 @@ async function fetchMovies(searchText) {
 }
 
 async function fetchMovie(id) {
-  const url = 'http://www.omdbapi.com/';
+  const url = '/api/';
   const { data: movie } = await axios.get(url, {
     params: {
       apikey: 'ded646ef',
